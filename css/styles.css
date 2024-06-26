@@ -1,0 +1,320 @@
+/*
+COLOR PALETTE
+Light Blue #ADD8E6
+Bright Pink #FF69B4
+Bright Yellow #FFFF00
+Bright Green #32CD32
+*/
+
+/* GLOBAL STYLES */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: #ADD8E6;
+    font-family: "Signika", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    
+}
+
+.navbar > li {
+    float: left;
+
+}
+
+.navbar > li > a,
+.dropdown .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar > li > a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content > a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    background-color: rgb(17, 238, 83);
+    font-family: "Signika", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+a {
+    color: #212721;
+}
+a:hover {
+    color: #FF69B4;
+    text-decoration: none;
+}
+
+.btn {
+    background: #32CD32;
+    color: #FFFF00;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Home */
+.home {
+    margin: 20px;
+    padding: 10px;
+    background-image: url(images/background_image2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Headers */
+h1 h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3em;
+    color: #FF69B4;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2em;
+    color: #004369;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "Caveat", cursive;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #004369;
+}
+
+/* Profile Section */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-content {
+    flex: 1;
+    margin-right: 40px;
+}
+.image-content {
+    flex: 0 0 150px;
+}
+.headshot {
+    max-width: 100%;
+    border-radius: 50%;
+    background-color: darkgray;
+}
+header p {
+    text-align: justify;
+    margin: 0 20px;
+}
+
+/* Projects Section */
+.projects {
+    background-color: rgba(255,255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.projects h2 {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color: rgba(180, 180, 180, 0.7);
+}
+.project-list .project {
+    margin-bottom: 20px;
+}
+.carousel-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 50%;
+    max-height: 15%;
+    align-items:center;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    align-items: center;
+    display: flex; /* Arrange images in a row */
+    transition: transform 0.5s ease; /* Smooth slide transition */
+  }
+  
+  .carousel-slide img {
+    width: 100%; /* Ensure images take full width of the container */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  .project p {
+    text-align: center;
+
+  }
+.project a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Work Experience Section */
+.work-experience {
+    background-color: rgba(255,255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.work-experience h2 {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color: rgba(180, 180, 180, 0.7);
+}
+.job-list {
+    display: flex;
+    justify-content: space-between;
+}
+.job {
+    flex: 0 0 30%;
+    background: rgb(203, 35, 131, 0.5);
+    padding: 20px;
+    margin: 10px 15px 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.job p {
+    margin: 5px 0;
+}
+.job ul {
+    list-style-type: disc;
+    margin-left: 10px;
+}
+
+/* Education Section */
+.education {
+    background-color: rgba(255,255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.education h2 {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color: rgba(180, 180, 180, 0.7);
+}
+.education-list .school {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: rgb(0, 67, 105, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+footer h2 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: rgb(17, 238, 83)
+}
+.social-media{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.socials li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.social-media a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #0077b5; /* LinkedIn blue color */
+}
+
